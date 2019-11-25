@@ -1,15 +1,35 @@
-body{
-background-image: url("https://banner2.kisspng.com/20180410/rze/kisspng-ninja-computer-programming-learning-study-skills-avatar-5acd61df554968.2443493915234093753493.jpg");
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center;
-background-color: white;
+h1 {
+    text-align: center;
+    font-size: 500%;
+    background-color: aqua;
 }
 
-ul{
-    font-size: 40px;
+#options {
+    text-align: center;
+    
 }
-.nav{
-    margin: 0;
-    padding: 0;
+
+#cats{
+    width: 27pc;
+    height: 27pc;
+    background-image: url("https://media.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif");
+    background-size: 100% 100%;
+}
+#dogs{
+    width: 27pc;
+    height: 27pc;
+    background-image: url(https://media.giphy.com/media/1DqOFqULOqe5y/giphy.gif);
+    background-size: 100% 100%;
+}
+#sheep{
+    width: 27pc;
+    height: 27pc;
+    background-image: url(https://media.giphy.com/media/9HvfMzSvhM9K8/giphy.gif);
+    background-size: 100% 100%;
+}
+#goats{
+    width: 27pc;
+    height: 27pc;
+    background-image: url(https://media.giphy.com/media/Clc4fHqQqQ9KU/giphy.gif);
+    background-size: 100% 100%;
 }
