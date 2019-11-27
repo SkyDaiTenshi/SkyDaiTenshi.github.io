@@ -17,24 +17,28 @@
     height: 27pc;
     background-image: url(https://media.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif);
     background-size: 100% 100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 #dogs{
     width: 27pc;
     height: 27pc;
     background-image: url(https://media.giphy.com/media/1DqOFqULOqe5y/giphy.gif);
     background-size: 100% 100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 #sheep{
     width: 27pc;
     height: 27pc;
     background-image: url(https://media.giphy.com/media/9HvfMzSvhM9K8/giphy.gif);
     background-size: 100% 100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 #goats{
     width: 27pc;
     height: 27pc;
     background-image: url(https://media.giphy.com/media/Clc4fHqQqQ9KU/giphy.gif);
     background-size: 100% 100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 /* --------------------------------------------------------------------------------- */
 
