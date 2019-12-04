@@ -1,22 +1,32 @@
 const mainURL = 'https://api.giphy.com/v1/gifs/';
 const apiKey = `j99F6FK9wcELlAPJnktep9Hxk5Qc8b2s`;
-const limitSearch = '5';
-const getUrl = `${mainURL}trending?api_key=${apiKey}&limit=${limitSearch}&rating=G`;
+const limitSearch = '16';
+const getUrl = `${mainURL}search?&api_key=${apiKey}&q=$cats&limit=${limitSearch}&offset=0&rating=G&lang=eng`;
 fetch(getUrl)
 .then(response => {
     return response.json()
   })
   .then(data => {
-    let gifUrls = data.data.images.url;
+    let gifData = data.data;
+    let gifUrls=[];
     let trendGrid = document.getElementById("trendGrid");
-    console.log(gifUrls)
-    gifUrls.forEach(element => {
-      let img = new image()
-      trendGrid.innerHTML += '<img src="'+image.src+'" />';
-      img.src = element;
+ 
+    gifData.forEach(element => {
+      gifUrls.push(element.images.original.url)
+    // let img = new Image();    
+    // trendGrid.innerHTML += '<img src="'+img.src+' "class="gallery__img" />';
+    // img.src = element.images.original.url;
     });
+    console.log(gifUrls)
+    for (let i=0; i<gifUrls.length; i++){
+    trendGrid.innerHTML += '<img src="'+gifUrls[i]+' "class="gallery__img" />';
+    }
 
   })
+  .then(
+
+  )
+
   .catch(err => {
     console.log("Fetch Error");
   })
