@@ -7,7 +7,7 @@ fetch(getUrl)
     return response.json()
   })
   .then(data => {
-    let gifUrls = data.data;
+    let gifUrls = data.data.images.url;
     let trendGrid = document.getElementById("trendGrid");
     console.log(gifUrls)
     gifUrls.forEach(element => {
