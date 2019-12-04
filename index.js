@@ -11,8 +11,7 @@ fetch(getUrl)
     let trendGrid = document.getElementById("trendGrid");
     console.log(gifUrls)
     gifUrls.forEach(element => {
-      let img = new Image();
-      trendGrid.innerHTML += '<img src="'+element.url+'" />';
+      trendGrid.innerHTML += '<img src="'+element+'" />';
     });
 
   })
