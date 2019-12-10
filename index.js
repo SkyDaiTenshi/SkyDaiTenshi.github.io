@@ -1,9 +1,9 @@
 const mainURL = 'https://api.giphy.com/v1/gifs/';
 const apiKey = `j99F6FK9wcELlAPJnktep9Hxk5Qc8b2s`;
 const limitSearch = '16';
+let keyword = document.getElementById("random").textContent;
 
-
-const getUrl = `${mainURL}search?&api_key=${apiKey}&q=$keyword&limit=${limitSearch}&offset=0&rating=G&lang=eng`;
+const getUrl = `${mainURL}search?&api_key=${apiKey}&q=${keyword}&limit=${limitSearch}&offset=0&rating=G&lang=eng`;
 fetch(getUrl)
 .then(response => {
     return response.json()
