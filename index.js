@@ -23,7 +23,7 @@ fetch(getUrl)
 
   })
   .then(
-
+1
   )
 
   .catch(err => {
@@ -31,6 +31,6 @@ fetch(getUrl)
   })
 
   document.getElementById("cats").addEventListener("click", function(){
-    document.location.href='https://skydaitenshi.github.io/animalPages/cats.html';
+    location.replace('https://skydaitenshi.github.io/animalPages/cats.html');
   });
 
