@@ -2,7 +2,7 @@ const mainURL = 'https://api.giphy.com/v1/gifs/';
 const apiKey = `j99F6FK9wcELlAPJnktep9Hxk5Qc8b2s`;
 const limitSearch = '16';
 let keyword = document.getElementById("random").textContent;
-console.log('js works')
+
 const getUrl = `${mainURL}search?&api_key=${apiKey}&q=${keyword}&limit=${limitSearch}&offset=0&rating=G&lang=eng`;
 fetch(getUrl)
 .then(response => {
@@ -29,10 +29,3 @@ fetch(getUrl)
   .catch(err => {
     console.log("Fetch Error");
   })
-
-  document.getElementById("cats").addEventListener("click", catPage());
-
-  function catPage () {
-    console.log("test works")
-    // window.location = 'https://skydaitenshi.github.io/animalPages/cats.html';
-  }
