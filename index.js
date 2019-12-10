@@ -1,7 +1,6 @@
 const mainURL = 'https://api.giphy.com/v1/gifs/';
 const apiKey = `j99F6FK9wcELlAPJnktep9Hxk5Qc8b2s`;
 const limitSearch = '16';
-console.log(document.getElementById("trendGrid"));
 
 
 const getUrl = `${mainURL}search?&api_key=${apiKey}&q=$keyword&limit=${limitSearch}&offset=0&rating=G&lang=eng`;
