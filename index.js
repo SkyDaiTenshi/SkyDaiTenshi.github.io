@@ -13,9 +13,6 @@ fetch(getUrl)
  
     gifData.forEach(element => {
       gifUrls.push(element.images.original.url)
-    // let img = new Image();    
-    // trendGrid.innerHTML += '<img src="'+img.src+' "class="gallery__img" />';
-    // img.src = element.images.original.url;
     });
     console.log(gifUrls)
     for (let i=0; i<gifUrls.length; i++){
