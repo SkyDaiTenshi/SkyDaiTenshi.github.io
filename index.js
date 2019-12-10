@@ -30,6 +30,8 @@ fetch(getUrl)
     console.log("Fetch Error");
   })
 
-  document.getElementById("cats").addEventListener("click", function(){
+  document.getElementById("cats").addEventListener("click", catPage());
+
+  function catPage () {
     window.location = 'https://skydaitenshi.github.io/animalPages/cats.html';
-  });
+  }
