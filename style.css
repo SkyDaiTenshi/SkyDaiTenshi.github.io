@@ -69,9 +69,9 @@
 }
 
 #navBar button {
-    height: 5pc;
+    height: 4pc;
     margin-left: 5px;
-    width: 24.5%;
+    width: 36.8%;
     border-radius: 8px;
     border: solid 4px coral;
 }
@@ -82,3 +82,16 @@
     background-color: aqua;
     margin: 0%;
 }
+
+#navBar input{
+    float: right;
+    border-radius: 8px;
+    border: solid 4px coral;
+    height: 3.40pc;
+    width: 24.5%;
+    margin-right: 5px;
+}
+
+::placeholder {
+    font-size: 200%;
+  }
