@@ -31,6 +31,6 @@ fetch(getUrl)
   })
 
   document.getElementById("cats").addEventListener("click", function(){
-    location.replace('https://skydaitenshi.github.io/animalPages/cats.html');
+    window.location = https://skydaitenshi.github.io/animalPages/cats.html');
   });
 
