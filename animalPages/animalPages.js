@@ -4,6 +4,7 @@ const limitSearch = '16';
 let keyword = document.getElementById("zone").textContent.split(" ");
 
 
+
 loadContent(`${mainURL}search?&api_key=${apiKey}&q=${keyword[0]}&limit=${limitSearch}&offset=0&rating=G&lang=eng`);
 
 document.getElementById("changePet").addEventListener("click", function(){
@@ -12,7 +13,9 @@ document.getElementById("changePet").addEventListener("click", function(){
 
 document.getElementById("home").addEventListener("click", function(){
   let pet = document.getElementById("zone").textContent.split(" ");
-  window.location = "https://skydaitenshi.github.io/animalPages/"+ pet[0].toLocaleLowerCase()+".html";
+  
+
+  window.location = "https://skydaitenshi.github.io/animalPages/"+pet[0].toLocaleLowerCase()+".html";
 }); 
 
 document.getElementById("searchInput").addEventListener("keyup", function(event) {
